@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HPS P11 Alaloppusarja 2026</title>
+
+<style>
+:root{
+    --hps-green:#00843D;
+    --hps-dark:#005A2E;
+    --game:#0d6efd;
+    --bg:#f5f7fa;
+    --card:#ffffff;
+    --text:#333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.5;
+}
+
+.hero{
+    background:linear-gradient(135deg,var(--hps-green),var(--hps-dark));
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    opacity:0.9;
+}
+
+.nav{
+    position:sticky;
+    top:0;
+    z-index:99;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    padding:15px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:var(--hps-green);
+    font-weight:600;
+    padding:8px 16px;
+    border-radius:20px;
+    transition:0.2s;
+}
+
+.nav a:hover{
+    background:#eaf7f0;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.day-title{
+    margin:50px 0 25px;
+    color:var(--hps-dark);
+    border-left:6px solid var(--hps-green);
+    padding-left:15px;
+}
+
+.timeline{
+    position:relative;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:120px;
+    top:0;
+    bottom:0;
+    width:4px;
+    background:#d7e4dc;
+}
+
+.event{
+    display:flex;
+    margin-bottom:18px;
+    position:relative;
+}
+
+.time{
+    width:100px;
+    text-align:right;
+    padding-right:20px;
+    font-weight:700;
+    color:var(--hps-dark);
+}
+
+.dot{
+    width:18px;
+    height:18px;
+    background:var(--hps-green);
+    border-radius:50%;
+    margin-top:4px;
+    z-index:2;
+}
+
+.card{
+    flex:1;
+    background:var(--card);
+    margin-left:20px;
+    padding:16px;
+    border-radius:14px;
+    box-shadow:0 4px 14px rgba(0,0,0,.07);
+}
+
+.card h4{
+    margin-bottom:4px;
+}
+
+.location{
+    color:#666;
+    font-size:.9rem;
+}
+
+.game .card{
+    background:linear-gradient(135deg,#0d6efd,#4a95ff);
+    color:white;
+}
+
+.game .location{
+    color:#dbe7ff;
+}
+
+.badge{
+    display:inline-block;
+    font-size:.75rem;
+    padding:4px 10px;
+    border-radius:30px;
+    margin-bottom:8px;
+    background:#eef6ff;
+    color:#0d6efd;
+    font-weight:600;
+}
+
+.game .badge{
+    background:rgba(255,255,255,.2);
+    color:white;
+}
+
+footer{
+    text-align:center;
+    color:#777;
+    margin:50px 0 20px;
+    font-size:.9rem;
+}
+
+@media (max-width:768px){
+
+.timeline::before{
+    left:55px;
+}
+
+.time{
+    width:45px;
+    font-size:.85rem;
+}
+
+.card{
+    margin-left:12px;
+}
+
+.hero h1{
+    font-size:1.9rem;
+}
+
+.nav{
+    flex-wrap:wrap;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>⚽ HPS P11 Alaloppusarja</h1>
+    <p>1.–3.11.2026</p>
+</header>
+
+<nav class="nav">
+    <a href="#paiva1">1.11.</a>
+    <a href="#paiva2">2.11.</a>
+    <a href="#paiva3">3.11.</a>
+</nav>
+
+<div class="container">
+
+<h2 id="paiva1" class="day-title">Sunnuntai 1.11.2026</h2>
+
+<div class="timeline">
+
+<div class="event"><div class="time">11:00</div><div class="dot"></div><div class="card"><span class="badge">TESTAUS</span><h4>Nopeus & Kevennyshyppy</h4><div class="location">Jalkapallohalli</div></div></div>
+
+<div class="event"><div class="time">11:30</div><div class="dot"></div><div class="card"><h4>SM-juoksu & SM-pallo</h4><div class="location">Jalkapallohalli</div></div></div>
+
+<div class="event"><div class="time">12:00</div><div class="dot"></div><div class="card"><h4>Lounas</h4><div class="location">Ravintolasali</div></div></div>
+
+<div class="event game"><div class="time">13:30</div><div class="dot"></div><div class="card"><span class="badge">OTTELU</span><h4>FF Jaro – HPS</h4><div class="location">Jalkapallohalli 1</div></div></div>
+
+<div class="event"><div class="time">14:45</div><div class="dot"></div><div class="card"><h4>Kyselyt ja pelaajakoulutus</h4><div class="location">Play</div></div></div>
+
+<div class="event"><div class="time">15:45</div><div class="dot"></div><div class="card"><h4>Päivällinen</h4><div class="location">Ravintolasali</div></div></div>
+
+<div class="event game"><div class="time">17:30</div><div class="dot"></div><div class="card"><span class="badge">OTTELU</span><h4>HPS – MuSa</h4><div class="location">Jalkapallohalli 1</div></div></div>
+
+<div class="event"><div class="time">18:20</div><div class="dot"></div><div class="card"><h4>Antropometria</h4><div class="location">Jalkapallohalli</div></div></div>
+
+<div class="event"><div class="time">20:00</div><div class="dot"></div><div class="card"><h4>Iltapala</h4><div class="location">Ravintolasali</div></div></div>
+
+</div>
+
+<h2 id="paiva2" class="day-title">Maanantai 2.11.2026</h2>
+
+<div class="timeline">
+
+<div class="event"><div class="time">07:15</div><div class="dot"></div><div class="card"><h4>Aamiainen</h4></div></div>
+
+<div class="event game"><div class="time">09:00</div><div class="dot"></div><div class="card"><span class="badge">OTTELU</span><h4>EPS – HPS</h4></div></div>
+
+<div class="event"><div class="time">10:30</div><div class="dot"></div><div class="card"><h4>Toiminnanohjaus</h4><div class="location">Kulma</div></div></div>
+
+<div class="event"><div class="time">11:45</div><div class="dot"></div><div class="card"><h4>Videopalaveri</h4><div class="location">E.Kino</div></div></div>
+
+<div class="event game"><div class="time">13:45</div><div class="dot"></div><div class="card"><span class="badge">OTTELU</span><h4>HPS – P-Iirot</h4></div></div>
+
+<div class="event game"><div class="time">16:45</div><div class="dot"></div><div class="card"><span class="badge">OTTELU</span><h4>Hercules-j – HPS</h4></div></div>
+
+<div class="event"><div class="time">19:45</div><div class="dot"></div><div class="card"><h4>Iltapala</h4></div></div>
+
+</div>
+
+<h2 id="paiva3" class="day-title">Tiistai 3.11.2026</h2>
+
+<div class="timeline">
+
+<div class="event"><div class="time">07:30</div><div class="dot"></div><div class="card"><h4>Aamiainen</h4></div></div>
+
+<div class="event game"><div class="time">09:00</div><div class="dot"></div><div class="card"><span class="badge">OTTELU</span><h4>HPS – JJK/YJ</h4></div></div>
+
+<div class="event"><div class="time">10:15</div><div class="dot"></div><div class="card"><h4>Huoneiden luovutus</h4></div></div>
+
+<div class="event game"><div class="time">12:45</div><div class="dot"></div><div class="card"><span class="badge">OTTELU</span><h4>SJK-j – HPS</h4></div></div>
+
+<div class="event"><div class="time">14:00</div><div class="dot"></div><div class="card"><h4>Palautekysely</h4></div></div>
+
+</div>
+
+</div>
+
+<footer>
+    HPS P11 • Alaloppusarja 2026
+</footer>
+
+</body>
+</html>
